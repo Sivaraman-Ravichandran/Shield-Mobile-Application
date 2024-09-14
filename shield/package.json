@@ -1,0 +1,27 @@
+{
+  "name": "shield",
+  "version": "1.0.0",
+  "main": "expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "@mapbox/mapbox-sdk": "^0.16.1",
+    "@rnmapbox/maps": "^10.1.31",
+    "@turf/turf": "^7.1.0",
+    "expo": "^51.0.0",
+    "expo-dev-client": "~4.0.26",
+    "expo-location": "~17.0.1",
+    "expo-status-bar": "~1.12.1",
+    "react": "18.2.0",
+    "react-native": "0.74.5",
+    "shield": "file:"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0"
+  },
+  "private": true
+}
