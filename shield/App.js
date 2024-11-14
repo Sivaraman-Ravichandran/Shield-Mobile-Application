@@ -58,7 +58,7 @@ const MapScreen = () => {
   // Function to handle the SOS button press
   const handleSOSPress = async () => {
     try {
-      const response = await fetch("http://192.168.102.4:5000/alert", {
+      const response = await fetch("http://192.168.103.4:5000/alert", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -135,12 +135,9 @@ const MapScreen = () => {
         {/* Display Distance */}
         {distance && (
           <View style={styles.distanceContainer}>
-            <Text style={styles.distanceText}>
-              Distance to current location: {distance} km
-            </Text>
+            <Text style={styles.distanceText}></Text>
           </View>
         )}
-
         {/* SOS Button */}
         <TouchableOpacity style={styles.sosButton} onPress={handleSOSPress}>
           <Text style={styles.sosButtonText}>Emergency</Text>
